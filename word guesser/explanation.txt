@@ -1,0 +1,7 @@
+A program I made to play around with an online word guessing game (https://skribbl.io/)
+Chooses all words that fit the blanks and automatically types them out (with delays to prevent being caught by the anti-spam system)
+Only works if the word list is known and is typed into words.txt
+
+How to use:
+copy the set of blanks (ex. ____ ___) to clipboard
+run guesser.jar and click on the input space of the text box on skribbl

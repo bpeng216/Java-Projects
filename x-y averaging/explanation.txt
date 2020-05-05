@@ -1,0 +1,6 @@
+A simple personal project that processes data points with multiple y values for the same x value and finds the median of the y values.
+
+data points formatted:
+30 200
+30 210
+40 124
