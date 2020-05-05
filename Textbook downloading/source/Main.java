@@ -55,7 +55,7 @@ public class Main {
 */
             //downloading
 
-            for (int i = 350; i < links.size(); i++) {
+            for (int i = 0; i < links.size(); i++) {
                 URL url = new URL(links.get(i).replaceAll("http", "https"));
                 HttpURLConnection c = (HttpURLConnection) url.openConnection();
                 c.setInstanceFollowRedirects(false);
@@ -65,7 +65,7 @@ public class Main {
                 String location = c.getHeaderField( "Location" );
                 links.set(i, location );
             }
-            for (int i = 350; i < links.size(); i++) {
+            for (int i = 0; i < links.size(); i++) {
                 URL url = new URL(links.get(i));
                 HttpURLConnection c = (HttpURLConnection) url.openConnection();
                 c.setInstanceFollowRedirects(false);
