@@ -1,0 +1,3 @@
+A basic image editor that can change colors, convert to greyscale, pixelate, and generate basic ascii art.
+
+After running the program, move the  mouse cursor to top left to reveal the menu. After changing settings, press draw to display changes. The save button saves the image to the saves folder.

@@ -21,6 +21,7 @@ public class Pixel extends JFrame {
     static JFileChooser fc = new JFileChooser();
     static int blackAndWhite, acidify, pixelated, red, green, blue, ascii = 0;
     static boolean line, spookify, greyed = false;
+    public int num = 0;
 
     public static void main(String[] args) {
         //Canvas c = new Pixel();
@@ -158,7 +159,7 @@ public class Pixel extends JFrame {
                 int aoifn = 1;
                 if (greyed) aoifn++;
                 if (spookify) aoifn++;
-                saveImage(img, ((ascii+ blackAndWhite+ pixelated+ acidify+ green+ blue+ red) * aoifn) + ".png");
+                saveImage(img, "saves\\" + num + ".png");
             }
         });
 
@@ -180,7 +181,7 @@ public class Pixel extends JFrame {
                     File file = fc.getSelectedFile();
                     path = file.getPath();
                 } else {
-                    System.out.println("pick a file, nitwit");
+                    System.out.println("pick a file, fool");
                 }
                 loadImage();
                 setSize(img.getWidth(), img.getHeight());
@@ -276,6 +277,7 @@ public class Pixel extends JFrame {
         try {
             File output = new File(file);
             ImageIO.write(img, "png", output);
+            num++;
         } catch (Exception e) {
             e.printStackTrace();
         }
